@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<!-- Html started-->
+<head>
+  <title>79K-Travel</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<!-- Main -->
+  <section>
+    <img src="bg.jpg" id="bg" />
+    <img src="moon (1).png" id="moon" />
+    <img src="mountain.png" id="mountain" />
+    <img src="road.png" id="road" />
+    <img src="logo.png" id="logo"/>
+    <h1 id="text">79K Travel</h1>
+  </section>
+  <!--Section 2-->
+  <section class="daraah">
+    <div class="about">
+      <img  src="main.png">
+      <img class="had" src="had.jpg">
+      <div class="photo2">
+      <img class="shuher" src="shuher.png">
+      <img class="mori" src="mori.jpg">
+      </div>
+      <!-- Text heseg -->
+      <div class="about-text">
+      <h2>ТА АДАЛ ЯВДАЛТ ДУРТАЙ ЮУ ?</h2>
+      <h4>Тэгвэл та өөрийн бодож явдаг бүх мөрөөдлөө нэг дор биелүүлэхэд <br>бэлэн үү ? 
+        Улаанбаатар хотоос 75км зайтай Төв аймгийн Батсүмбэр суманд байрлах<br> 
+        Сөгнөгөрийн ам гэх гол ус, хад хавцал, ой, булаг рашаан гээд бүгд орших<br> байгалийн өвөрмөц тогтоцтой үзэсгэлэнт газар 2 өдөр 1 шөнийн адал явдалт аялалд урьж байна.</h4>
+        <h2 class="hutulbur">ХӨТӨЛБӨР :</h2>
+        <h4>- 5км морин аялал (Түшээ гүний хад үзэж ходоод, 
+          сахарын рашаан уух)<br>
+       - 40 метр өндөр хаданд авирч олсоор буух<br>
+       - Хөгжөөнт тэмцээн уралдаан <br>
+       - Ил гал дээр хийсэн амтат хоол ( Ази, Европ) <br>
+       - Мэргэжлийн зураг бичлэг (vlog )<br>
+       -  Галын наадам ( bonfire )<br>
+       -  Зумба бүжиг <br>
+       -  ENJOY TIME</h4>
+       <h2 class="text2">~Гайхамшгийг чи өөрөө бүтээдэг болохоор<br>
+        ~Гайхамшиг чамд өдөр болгон тохиолддог юм шүү.</h2>
+        <!-- Text end +Add| -->
+      </div>
+    </div>
+  </section>
+  </section>
+  <!-- Java -->
+  <script type="text/Javascript">
+      let bg = document.getElementById("bg")
+      let moon = document.getElementById("moon")
+      let mountain = document.getElementById("mountain")
+      let road = document.getElementById("raod")
+      let text = document.getElementById("text")
+      window.addEventListener('scroll',function(){
+          var value = window.scrollY;
+          bg.style.top = value * 0.5 + 'px';
+          moon.style.left = -value * 0.5 + 'px';
+          mountain.style.top = -value * 0.15 + 'px';
+          road.style.top = value * 0.15 + 'px';
+          text.style.top = -value * 0.5 + 'px';
+      })
+    </script>
+</body>
+
+</html>
